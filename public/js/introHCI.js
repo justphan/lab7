@@ -10,4 +10,9 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// your code here
+	$("button").click(callAnalytics);
+}
+
+function callAnalytics(e) {
+	ga("send", "event", "like", "click");
 }
